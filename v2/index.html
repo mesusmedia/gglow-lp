@@ -55,6 +55,14 @@
     .icon-strip > div:last-child { border-right:none; }
     .icon-strip-night > div { border-right-color: rgba(212,175,55,.25); }
     .play-badge { width:56px; height:56px; border-radius:9999px; background:rgba(253,252,251,.92); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.35); }
+
+    /* transição entre seções: a cor da seção anterior se dissolve sobre o topo da próxima */
+    .seam { position: relative; }
+    .seam::before { content:''; position:absolute; top:0; left:0; right:0; height:110px; z-index:5; pointer-events:none; }
+    .seam::after { content:''; position:absolute; top:0; left:50%; width:140px; height:2px; margin-left:-70px; background:linear-gradient(90deg,transparent,#AF8F2C,transparent); pointer-events:none; z-index:6; }
+    .seam-night::before { background:linear-gradient(to bottom, rgba(23,18,13,.92), rgba(23,18,13,0)); }
+    .seam-cream::before { background:linear-gradient(to bottom, rgba(247,243,240,.92), rgba(247,243,240,0)); }
+    .seam-white::before { background:linear-gradient(to bottom, rgba(255,255,255,.92), rgba(255,255,255,0)); }
 </style>
 </head>
 <body class="overflow-x-hidden selection:bg-gold selection:text-white">
@@ -88,7 +96,7 @@
 </section>
 
 <!-- VOCÊ SE IDENTIFICA -->
-<section class="bg-[#F7F3F0]">
+<section class="seam seam-night bg-[#F7F3F0]">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12">
         <div class="lg:col-span-6 px-5 sm:px-10 lg:px-14 py-14 sm:py-20 flex flex-col justify-center reveal">
             <span class="eyebrow mb-4">Você se identifica?</span>
@@ -108,7 +116,7 @@
 </section>
 
 <!-- AVALIAÇÃO CAPILAR COMPLETA -->
-<section class="bg-white">
+<section class="seam seam-cream bg-white">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12">
         <div class="lg:col-span-6 relative min-h-[300px] sm:min-h-[420px] reveal">
             <img src="/img/avaliacao-dermatoscopio.webp" alt="Médica avaliando o couro cabeludo de uma paciente com dermatoscópio" class="absolute inset-0 w-full h-full object-cover" width="1168" height="880" loading="lazy" decoding="async">
@@ -132,7 +140,7 @@
 </section>
 
 <!-- PROTOCOLO CAPILAR GGLOW -->
-<section class="py-16 sm:py-20 px-4 sm:px-6 bg-[#F7F3F0] border-y border-gray-100">
+<section class="seam seam-white py-16 sm:py-20 px-4 sm:px-6 bg-[#F7F3F0]">
     <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12 reveal">
             <span class="eyebrow mb-4 block">Protocolo Capilar Gglow</span>
@@ -162,7 +170,7 @@
 </section>
 
 <!-- RESULTADOS REAIS -->
-<section class="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+<section class="seam seam-cream py-16 sm:py-20 px-4 sm:px-6 bg-white">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         <div class="lg:col-span-4 reveal">
             <span class="eyebrow mb-4 block">Resultados Reais</span>
@@ -179,7 +187,7 @@
 </section>
 
 <!-- DEPOIMENTO -->
-<section class="py-16 sm:py-20 px-4 sm:px-6 bg-[#F7F3F0] border-y border-gray-100">
+<section class="seam seam-white py-16 sm:py-20 px-4 sm:px-6 bg-[#F7F3F0]">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         <div class="lg:col-span-5 reveal">
             <div class="rounded-[1.75rem] overflow-hidden border border-gray-200 shadow-xl bg-black">
@@ -198,7 +206,7 @@
 </section>
 
 <!-- CTA FINAL -->
-<section class="relative bg-premium-night text-white overflow-hidden">
+<section class="seam seam-cream relative bg-premium-night text-white overflow-hidden">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12">
         <div class="lg:col-span-7 px-5 sm:px-10 lg:px-14 py-16 sm:py-24 flex flex-col justify-center reveal">
             <span class="eyebrow-night mb-5 block">Seu próximo passo</span>
@@ -218,7 +226,7 @@
 </main>
 
 <!-- RODAPÉ -->
-<footer class="py-12 md:py-16 px-4 sm:px-6 border-t border-gray-100 bg-[#F7F3F0]">
+<footer class="seam seam-night py-12 md:py-16 px-4 sm:px-6 bg-[#F7F3F0]">
     <div class="max-w-6xl mx-auto text-center">
         <h3 class="text-2xl md:text-3xl font-serif text-gold mb-2">Gglow</h3>
         <p class="text-gray-500 text-[10px] sm:text-xs md:text-sm mb-8 md:mb-10 tracking-widest uppercase">Estética Regenerativa · Porto Alegre, RS</p>
