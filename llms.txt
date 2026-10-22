@@ -1,0 +1,23 @@
+# Gglow Estética Regenerativa
+
+> Clínica de estética regenerativa em Porto Alegre, RS, especializada em protocolo capilar para queda, falhas no couro cabeludo e perda de densidade.
+
+## Sobre
+A Gglow oferece avaliação capilar completa (análise do couro cabeludo, histórico capilar, exames e deficiências nutricionais) seguida de um protocolo personalizado, que pode combinar mesoterapia capilar, microagulhamento com drug delivery, laser capilar e suporte vitamínico, conforme a causa identificada em cada caso.
+
+## Serviços
+- Avaliação Capilar Completa
+- Mesoterapia Capilar
+- Microagulhamento com Drug Delivery
+- Laser Capilar
+- Suporte Vitamínico (suplementação direcionada)
+
+## Localização e contato
+- Cidade: Porto Alegre, RS, Brasil
+- WhatsApp: +55 51 99280-3925
+
+## Observações importantes
+Os resultados do tratamento dependem da avaliação individual, da causa da queda capilar, das condições dos folículos e da resposta de cada paciente. A Gglow não promete resultados iguais para todas as pessoas.
+
+## Página
+- Site: https://gglow-lp.vercel.app/
