@@ -34,4 +34,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://gglow-lp.vercel.app/sitemap.xml
+Sitemap: https://gglow.mesusmedia.com.br/sitemap.xml
